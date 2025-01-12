@@ -1,0 +1,1 @@
+//It's january 12th 2025 and this is my first ever small coding project outside of school. This is a note mostly to myself to see in the future ultimately, but if there's anyone else seeing this, please don't judge too hard I just started coding not long ago :(
