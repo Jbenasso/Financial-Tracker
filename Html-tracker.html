@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="css-tracker.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+
+        <div class="input-section">
+            <input type="text" id="expense-name" placeholder="Expense Name">
+            <input type="number" id="expense-amount" placeholder="Amount">
+            <select id="expense-category">
+                <option value="Food">Food</option>
+                <option value="Transport">Transport</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Others">Others</option>
+            </select>
+            <button id="add-expense">Add Expense</button>
+
+        </div>
+
+        <div class="filter-section">
+            <label for="filter-category">Filter by Category:</label>
+            <select id="filter-category">
+                <option value="All">All</option>
+                <option value="Food">Food</option>
+                <option value="Transport">Transport</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
+
+        <div class="summary-section">
+            <h2>Total Expenses: $<span id="total-expenses">0.00</span></h2>
+        </div>
+
+        <ul id="expense-list"></ul>
+
+        <div class="chart-section">
+            <h2>Expense Breakdown</h2>
+            <canvas id="expense-chart"></canvas>
+        </div>
+
+        <button id="toggle-dark-mode">Toggle Dark Mode</button>
+
+    </div>
+    <div id="chart-section">
+        <canvas id="expense-chart"></canvas>
+    </div>
+    
+
+    <script src="Tracker-Finance.js"></script>
+
+</body>
+</html>
